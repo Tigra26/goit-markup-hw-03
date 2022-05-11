@@ -56,7 +56,6 @@ img {
 
 .logo {
     font-family: Raleway, sans-serif; 
-    margin-right: 93px;
     margin-left: 0;
     font-weight: 700; 
     font-size: 26px; 
@@ -75,6 +74,10 @@ img {
     border-color: var(--border-header-color); 
 }
 
+.header-nav {
+    margin-left: 93px;
+}
+
 .nav-flex {
     display: flex;
     align-items: center;
@@ -83,7 +86,6 @@ img {
 .nav-list {
     display: flex;
     align-items: center;
-    
 }
 
 .nav-item:not(:last-child) {
@@ -120,12 +122,8 @@ img {
     align-items: center;
 }
 
-.header-contact-item {
-    margin-right: 50px;
-}
-
-.header-contact-item:last-child {
-    margin-right: 0;
+.header-contact-item:not(:first-child) {
+    margin-left: 50px;
 }
 
 .header-contact-link {
@@ -145,8 +143,12 @@ img {
     color: var(--accent-color);
 }
 
-.footer-contact-list {
+.footer-contact {
     margin-top: 20px;
+}
+
+.footer-contact-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-contact-map-link {
@@ -160,7 +162,6 @@ img {
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
-    margin-top: 9px;
     color: var(--footer-text-color);
 }
 
@@ -239,9 +240,9 @@ img {
     color: var(--accent-color);
 }
 
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.menu {
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio-button {
@@ -256,9 +257,13 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    margin-right: 8px;
+    
     cursor: pointer;
     color: var(--primary-text-color);
+}
+
+.portfolio-btn-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio-btn-list {
@@ -312,8 +317,6 @@ img {
 
 .features {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .features-item:not(:last-child) {
@@ -325,24 +328,20 @@ img {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.71;
-    margin-right: 30px;
-    margin-bottom: 10px;
     text-decoration: uppercase;
     color: var(--primary-text-color);
 }  
 
 .features-text {
-    font-family: Roboto, 
-    sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.71;
     margin-top: 10px;
-    margin-right: 30px;
     color: var(--secondary-text-color);
 }
 
 .work {
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -370,8 +369,6 @@ img {
 }
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--team-background-color);
 }
 
